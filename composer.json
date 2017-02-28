@@ -1,0 +1,23 @@
+{
+    "name": "purocean/yii2-sendcloud-mailer",
+    "type": "library",
+    "description": "A simple exclusive workflow lib",
+    "keywords": ["yii2", "email", "mailer", "sendcloud"],
+    "homepage": "https://github.com/purocean/yii2-sendcloud-mailer",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/purocean/yii2-sendcloud-mailer/issues",
+        "source": "https://github.com/purocean/yii2-sendcloud-mailer"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.4"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "SendcloudMailer\\": "src/"
+        }
+    }
+}
