@@ -23,8 +23,13 @@ class Mailer extends BaseMailer
 
     public function compose($view = null, array $params = [])
     {
-        $this->_useHtml = isset($view['html']);
-        $this->_useText = isset($view['text']);
+        if (is_null($view)) {
+            $this->_useText = true;
+            $this->_useHtml = true;
+        } else {
+            $this->_useHtml = isset($view['html']);
+            $this->_useText = isset($view['text']);
+        }
 
         return parent::compose($view, $params);
     }
